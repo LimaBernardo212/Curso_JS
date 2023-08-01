@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula_07|A</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        h1{
+            font-size: x-large;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>CALCULADORA</h1>
+    <script>
+        var n1 = window.prompt('Digite um numero:')
+        var  n2 = window.prompt('Digite +1 numero:')
+        var res1 = Number(n1) + Number(n2)/2
+        n2 += 6 // Ou n2++ adiciona 1 unidade
+        n2 -= 6 // Ou n2-- tira 1 unidade
+        n2 *= 3
+        n2 /= 3
+        n2 **= 2
+        var res2 = Number(n1) % 2 + 4/Number(n2)
+        document.write(`<p>${n1} + ${n2}/2 = ${res1}</p><br>Ou<br>`)
+        document.write(`<p>(${n1}+${n2})/2 = ${res2}</p>`)
+    </script>
+</body>
+</html>

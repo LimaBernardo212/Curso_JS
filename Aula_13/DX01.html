@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DX_01</title>
+    <style>
+        body{
+            background-color: black;
+            text-align: center;
+            color: white;
+        }
+        h1{
+            color: white;
+        }
+        div{
+            background-color: rgb(255, 255, 255);
+            padding: 12px;
+            color: rgb(0, 0, 0);
+            width: 400px;
+            height: 300px;
+            margin-left: 500px;
+            margin-right: 500px;
+
+            
+        }
+        main{
+            color: rgb(0, 0, 0);
+            border-radius: 40%;
+        }
+    </style>
+</head>
+<body>
+        <h1>Hora do dia</h1>
+        <div>
+            <p>Agora são...</p>
+            <main id="dia">
+            </main>
+        </div>
+
+    <script>
+        var data = new Date
+        var hora = data.getHours()
+        if (hora >= 18){
+           document.getElementById('dia').innerHTML = '<img src="img/transferir.jpg">'
+            window.document.body.style.backgroundColor = 'Gray'
+        }
+        else if (hora >= 0 && hora <= 5){
+            document.getElementById('dia').innerText = '<img src="img/madrugada-2.jpg">'
+            window.document.body.style.backgroundColor = "blue"
+            
+        }
+        else if (hora >= 5 && hora <= 12){
+            document.getElementById('dia').innerHTML = '<img src="img/transferir (1).jpg"'
+            window.document.body.style.backgroundColor = "yellow"
+        }
+        else if(hora >= 12 && hora <= 18){
+            document.getElementById('dia').innerHTML ='<img src="img/sun.jpg">'
+            window.document.body.style.backgroundColor = 'brown'
+        }
+        else{
+            document.wirte('Hora invalida')
+        }
+    </script>
+</body>
+</html>

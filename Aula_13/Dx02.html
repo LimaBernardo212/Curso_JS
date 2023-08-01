@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dx_01</title>
+    <style>
+        @font-face {
+            font-family:'space_age';
+            src: url("Fonts/space age.ttf");
+        }
+        body{
+            background-color: rgb(0, 26, 255);
+            font-family: 'space_age', Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        main{
+            background-color: white;
+            padding: 30px;
+            
+        }
+        h1{
+            text-align: center;
+            color: #FFFF;
+        }
+    </style>
+</head>
+<body>
+    <h1>Anisador de idade</h1>
+    <main>
+        <p>Ano de nascimento</p>
+        <input type="number" name="" id="an">
+        <p><input type="checkbox" name="F" id="F" onclick="bool()"> Masculino
+        <input type="checkbox" name="M" id="M" onclick="boo()"> Feminino </p>
+        <input type="button" value="Enviar" onclick="somar()">
+        <div id="res"></div>
+    </main>
+    <script>
+        var f = false
+        var m = false
+        function somar(){
+            var data = new Date
+            var daan = Number(data.getFullYear())
+            var anasc = document.getElementById('an')
+            var anoDenasc = Number(anasc.value)
+            var ide = daan - anoDenasc
+            var area = document.getElementById('res')  
+            if (ide <= 3 && m == true){
+                area.innerHTML = 'Imagem de menino de '+ ide + ' anos.'
+            }
+            else if (ide >= 5 <= 10 && m == true){
+                area.innerHTML = 'Imagem de menino de ' + ide + ' anos.'
+            }
+            else if (ide >= 10 <= 15 && m == true){
+                area.innerHTML = `Imagem de menino de ${ide} anos. `
+            }
+            else if(ide >= 15 <= 20 && m == true){
+                area.innerHTML = `Imagem de homem de ${ide} anos.`
+            }
+            else if (m == true){
+                area.innerHTML = `Imagem de homem de ${ide} anos.`
+            }
+            if (f == true && ide <= 15){
+                area.innerHTML = 'Imagem de uma menina de ' + ide + ' anos.'
+            }
+            else if (f == true && ide >= 15){
+                area.innerHTML = `Imagem de mulher de ${ide} anos `
+            }
+
+    }
+    function bool(){
+        m = true
+        f = false
+    }
+    function boo(){
+        f = true
+        m = false
+    }
+    </script>
+</body>
+</html>

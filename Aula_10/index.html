@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula_10</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        div{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            background-color:#BFA317;
+            background-color: #bfa317;
+            width: 150px;
+            height: 50px;
+            text-align: center;
+            padding: 15px;
+            
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Eventos <strong>DOM</strong></h1>
+    </main>
+        <div id="itn" onmouseenter="entrou()">
+            Interaja....
+        </div>
+    <script>
+         var area = window.document.getElementById('itn')
+         area.addEventListener('click', clicar)
+         
+         area.addEventListener('mouseout', saiu)
+        
+        function clicar() {
+            area.innerText = "Clicou o mouse"
+            area.style.backgroundColor = 'red'
+        }
+        function entrou(){
+            area.innerHTML = "Entrou o mouse"
+            area.style.backgroundColor = 'yellow'
+        }
+        function saiu(){
+            area.innerText = "Saiu o mouse"
+            area.style.backgroundColor = 'blue'
+        }
+    </script>
+    <a href="pg2.html">Proxima pagina</a>
+</body>
+</html>

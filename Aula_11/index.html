@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula_11</title>
+</head>
+<body>
+    <h1>Sistema de multas</h1>
+    <p>Sua velocidade</p>
+    <input type="number" name="" id="vel">
+    <input type="button" value="Verificar" onclick="clicar">
+    <div id="res">
+
+    </div>
+    <script>
+        function clicar(){
+            velocit = document.querySelector('div#vel')
+            vel = Number(velocit.value)
+            res = document.querySelector('div#res')
+            if (vel >= 61){
+                document.querySelector('div#res').innerHTML = "Você foi MULTADO!!"
+            }
+            else{
+                document.querySelector('div#res').innerHTML = "Você esta dentro do limite!" 
+            }
+        }
+    </script>
+</body>
+</html>

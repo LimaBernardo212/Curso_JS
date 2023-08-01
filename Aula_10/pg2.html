@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula_010</title>
+</head>
+<body>
+    <h1>Somando Valores</h1>
+    <p><input type="number" name="n1" id="n1"></p>
+    +
+    <p><input type="number" name="n2" id="n2"></p>
+    
+    <input type="button" value="Somar" onclick="somar()">
+    <script>
+        function somar(){
+            var n1 = window.document.querySelector('input#n1')
+            var n2 = window.document.querySelector('input#n2')
+            var t1 = Number(n1.value)
+            var t2 = Number(n2.value)
+            var result = t1+t2
+            document.write(`${t1}+${t2}=${result}`)
+        }
+    </script>
+</body>
+</html>

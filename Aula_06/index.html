@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula_06</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body{
+            background-color: rgb(255, 255, 101);
+        }
+        p{
+            font-size: -12px;
+        }
+        h2{
+            font-size: 60px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, <strong>DENOVO</strong></h1>
+    <p><strong>AGORA O -> / PAU VAI COMER!!!</strong></p>
+    <script>
+        var n1 = parseInt(window.prompt('Digite um número:'))
+        var n2 = parseFloat(window.prompt('Digite + 1 numero:'))
+        var res =Number(n1+n2)
+        document.write(`<h2>O resultado foi ${res.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}.</h2>`)
+        s = 'Javascript'
+        alert('Javascript tem ' +s.length + ' Letras')
+        alert(s.toUpperCase())
+        alert(s.toLowerCase())
+        
+    </script>
+</body>
+</html>

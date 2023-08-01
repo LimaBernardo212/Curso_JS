@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula_09</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body{
+            background-image: linear-gradient(to right,#F2CF1D,#bfa317dc,#8c7711e5,#594C0B);
+        }
+        main{
+            background-color:#bfa317dc ;
+            padding: 60px;
+            margin: 45px;
+            width: 350px;
+            height: 400px;
+            text-align: center;
+            border-radius: 10px;
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>DOM</h1>
+        <p>Document.Object.Model</p>
+        <p>Vou aprender a usar o <strong>DOM</strong></p>
+        <div id="msg">Clique em mim</div>
+        <script>
+            var main = window.document.getElementsByTagName('main')[0]
+            // var msg = window.document.getElementsById('msg')[0]
+            //var msg = window.document.getElementsByName('msg')[0]
+            var msg = window.document.querySelector('div#msg')
+           window.document.write(`Usamos o charset ${window.document.charset}`)
+           window.document.write(`<p>O navegador atual e o  ${window.navigator.appName}</p>`)
+           window.document.write(`
+           <p>O site atual e ${window.document.URL}</p>`)
+           //Replica com JS
+           window.document.write('<h2>Replica com javascript 100% <strong>BARATA</strong></h2>')
+           window.document.write(main.innerText)
+           //Replica CARA que trava o PC
+           //window.document.write('<h2>Replica com javascript<strong>CARA</strong>')
+           //window.document.write(main.innerHTML)
+           msg.style.color = 'blue'
+        </script>
+    </main>
+</body>
+</html>
