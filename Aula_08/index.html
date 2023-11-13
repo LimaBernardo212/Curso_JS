@@ -15,17 +15,17 @@
         document.write('<h2>Os resultados são...</h2>')
         var v1 = Number(window.prompt('Digita um valor:'))
         var v2 = Number(window.prompt('Digita +1 valor:'))
-        var r1 = v1 > v2
-        var r2 = v1 < v2
-        var r3 = v1 >= v2
-        var r4 = v1 <= v2
-        var r5 = v1 == v2
-        var r6 = v1 != v2
-        var r7 = ! true
-        var r8 = true && false
-        var r9 = false || false
-        var r10 = v1 <= 3?'Ok':'Não'
-        var r11 = v1 <= 3?'Ok':'Não'
+        var r1 = v1 > v2// maior que
+        var r2 = v1 < v2// menor que
+        var r3 = v1 >= v2 // maior ou igual
+        var r4 = v1 <= v2 // menor ou igual
+        var r5 = v1 == v2// são iguais
+        var r6 = v1 != v2 // são diferentes
+        var r7 = ! true // e verdadeiro
+        var r8 = true && false // verdadeiro e falso
+        var r9 = false || false // falso falso
+        var r10 = v1 >= 3?'Ok':'Não'// se v1 e maior que 3
+        var r11 = v1 <= 3?'Ok':'Não' // se v2 e menor que tres
         // Fato:JS não liga para os tipos na hora da comparação ex: 5 == '5'-> Js responde: <true>, mas caso você ultilize === ele comparará os tipos tambem.
         document.write(`${v1}> ${v2} = ${r1}<br>${v1}<${v2} = ${r2}<br>${v1} >= ${v2} = ${r3}<br>${v1}<= ${v2} = ${r4}<br>${v1} == ${v2} = ${r5}<br>${v1}!= ${v2} = ${r6}<br>r7 = ${r7}<br> true:false = ${r8}<br> false:false = ${r9}<br>O valor1 esta Ok?${r10}.<blr>E o valor2 esta?${r11}`)
         /*Ordem de resulução da conta: a = 5

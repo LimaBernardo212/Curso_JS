@@ -20,16 +20,15 @@
 </head>
 <body>
     <h1>Olá, <strong>DENOVO</strong></h1>
-    <p><strong>AGORA O -> / PAU VAI COMER!!!</strong></p>
     <script>
-        var n1 = parseInt(window.prompt('Digite um número:'))
-        var n2 = parseFloat(window.prompt('Digite + 1 numero:'))
-        var res =Number(n1+n2)
-        document.write(`<h2>O resultado foi ${res.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}.</h2>`)
+        var n1 = parseInt(window.prompt('Digite um número:'))//Numero inteiro no prompt
+        var n2 = parseFloat(window.prompt('Digite + 1 numero:'))//número real no prompt
+        var res =Number(n1+n2)//Soma comum
+        document.write(`<h2>O resultado foi ${res.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}.</h2>`)//Formatação de dinheiro
         s = 'Javascript'
-        alert('Javascript tem ' +s.length + ' Letras')
-        alert(s.toUpperCase())
-        alert(s.toLowerCase())
+        alert('Javascript tem ' +s.length + ' Letras')//Contagem de letras
+        alert(s.toUpperCase())//Tudo em maisculo
+        alert(s.toLowerCase())//Tudo em minusculo
         
     </script>
 </body>

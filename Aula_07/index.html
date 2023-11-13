@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula_07|A</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        h1{
+            font-size: x-large;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+    </style>
+</head>
+// Ou n2-- tira 1 unidade
+// Ou n2++ adiciona 1 unidade
+<body>
+    <h1>CALCULADORA</h1>
+    <script>
+        var n1 = Number(window.prompt('Digite um número:'))
+        var n2 = Number(window.prompt('Digite outro número:'))
+        var res1 = Number(n1 + n2)//soma
+        var res2 = Number(n1 - n2)//subtração
+        var res3 = Number(n1 * n2)//multiplicação
+        var res4 = Number(n1 / n2)//Divisão
+        var res5 = Number(n1 ** n2)//Exponenciação
+        document.write(`A soma ${n1}+${n2}=${res1} <br> A subtração ${n1}-${n2}=${res2*-1} <br> A multiplicação ${n1}X${n2}=${res3} <br> A divisão ${n1}/${n2}=${res4} <br> A exponenciação ${n1}<sup>${n2}</sup> = ${res5}`)//Escreve tudo na tela
+    </script>
+</body>
+</html>

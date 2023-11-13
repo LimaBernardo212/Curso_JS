@@ -31,19 +31,19 @@
         <div id="msg">Clique em mim</div>
         <script>
             var main = window.document.getElementsByTagName('main')[0]
-            // var msg = window.document.getElementsById('msg')[0]
+            // var msg = window.document.getElementsById('msg')[0] forma de localizar um object em javascript
             //var msg = window.document.getElementsByName('msg')[0]
             var msg = window.document.querySelector('div#msg')
-           window.document.write(`Usamos o charset ${window.document.charset}`)
-           window.document.write(`<p>O navegador atual e o  ${window.navigator.appName}</p>`)
+           window.document.write(`Usamos o charset ${window.document.charset}`)//Descobrindo o charset
+           window.document.write(`<p>O navegador atual e o  ${window.navigator.appName}</p>`)//Descobrindo o navegador
            window.document.write(`
-           <p>O site atual e ${window.document.URL}</p>`)
+           <p>O site atual e ${window.document.URL}</p>`)//descobrindo a url
            //Replica com JS
            window.document.write('<h2>Replica com javascript 100% <strong>BARATA</strong></h2>')
-           window.document.write(main.innerText)
+           window.document.write(main.innerText)// replica
            //Replica CARA que trava o PC
            //window.document.write('<h2>Replica com javascript<strong>CARA</strong>')
-           //window.document.write(main.innerHTML)
+           //window.document.write(main.innerHTML) // replica tambem tags
            msg.style.color = 'blue'
         </script>
     </main>
